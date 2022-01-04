@@ -1,4 +1,4 @@
-FROM ubuntu:hirsute
+FROM ubuntu:rolling
 USER root
 
 RUN apt-get update && apt-get install -y git && \
