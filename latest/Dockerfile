@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM ubuntu:lastest
 USER root
 
 RUN apt-get update && apt-get install -y git && \
