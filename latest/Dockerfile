@@ -4,7 +4,7 @@ USER root
 RUN apt-get update && apt-get install -y git && \
     git clone https://github.com/zmiguel/rtorrent-rutorrent-shared.git a && \
     apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y rtorrent unzip unrar mediainfo curl php-fpm php-cli php-geoip php-mbstring php-zip nginx wget ffmpeg supervisor php-xml libarchive-zip-perl libjson-perl libxml-libxml-perl irssi sox python3-pip && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y rtorrent unzip unrar mediainfo curl php-fpm php-cli php-geoip php-mbstring php-zip nginx wget ffmpeg supervisor php-xml libarchive-zip-perl libjson-perl libxml-libxml-perl irssi sox python3-pip python-is-python3 && \
     pip install cloudscraper && \ 
     cp ./a/rutorrent-*.nginx /root/ && \
     mkdir -p /var/www && cd /var/www && \
