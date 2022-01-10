@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y git && \
     sed -i 's/\/var\/log/\/downloads\/\.log/g' /etc/nginx/nginx.conf
 
 EXPOSE 80 6880 55970
-VOLUME /download /config
+VOLUME /download /downloads
 
 CMD ["supervisord"]
 
