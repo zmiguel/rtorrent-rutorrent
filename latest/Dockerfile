@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y git && \
     cp ./a/rutorrent-*.nginx /root/ && \
     mkdir -p /var/www && cd /var/www && \
     git clone https://github.com/Novik/ruTorrent.git rutorrent && \
+    cd rutorrent && \
+	git checkout 6bffcb1d3fd0a25dcba9100a6bbbc6cb8de7af29 && \
+    cd .. && \
     rm -rf ./rutorrent/.git* && cd / && \
     cp ./a/config.php /var/www/rutorrent/conf/ && \
     cp ./a/startup-rtorrent.sh ./a/startup-nginx.sh ./a/startup-php.sh ./a/startup-irssi.sh ./a/.rtorrent.rc /root/ && \
