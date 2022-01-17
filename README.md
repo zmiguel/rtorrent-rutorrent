@@ -16,9 +16,10 @@ Multiple processes inside the container managed by supervisord:
 Exposed:
 
  - Web UI ports: 80 and 443 (can be remapped in 'docker run')
- - DHT UDP port: 49160 (can be remapped)
- - Incoming connections port: 49161 (can be remapped)
- - Downloads volume: /downloads
+ - DHT UDP port: 6880  (can be remapped)
+ - Incoming connections port: 55970 (can be remapped)
+ - Downloads volume: /download
+ - config volume: /downloads
  - rtorrent scratch files (.rtorrent/{watch|session} will be created automatically): /downloads
  - autodl-irssi config files are created automatically: /downloads/.autodl
  - external rtorrent config (.rtorrent/.rtorrent.rc): /downloads
